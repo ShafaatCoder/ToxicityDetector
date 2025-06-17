@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Toxicity Detector",
+  "version": "1.0",
+  "description": "Flags toxic YouTube comments",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
